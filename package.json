@@ -1,0 +1,27 @@
+{
+  "name": "aradia-bot",
+  "version": "1.0.0",
+  "description": "Simple telegram bot",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JeanSummers/aradia-bot.git"
+  },
+  "scripts": {
+    "dev": "supervisor -x micro-bot ./dist/index.js",
+    "build": "tsc --watch",
+    "start": "@echo %BOT_TOKEN% && micro-bot ./dist/index.js",
+    "now-start": "micro-bot -d ${NOW_URL} ./dist/index.js",
+    "test": "echo Tests give no advantages to this project"
+  },
+  "author": "JeanSummers",
+  "license": "ISC",
+  "dependencies": {
+    "micro-bot": "^2.5.3",
+    "proxy-agent": "^3.1.0"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0",
+    "typescript": "^3.4.4"
+  }
+}
