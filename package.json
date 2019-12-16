@@ -9,9 +9,9 @@
   },
   "scripts": {
     "dev": "supervisor -x micro-bot ./dist/index.js",
-    "build": "tsc --watch",
-    "start": "@echo %BOT_TOKEN% && micro-bot ./dist/index.js",
     "now-start": "micro-bot -d ${NOW_URL} ./dist/index.js",
+    "watch": "tsc --watch",
+    "start": "@echo %BOT_TOKEN% && micro-bot ./dist/index.js",
     "test": "echo Tests give no advantages to this project"
   },
   "author": "JeanSummers",
